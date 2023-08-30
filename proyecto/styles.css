@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo.png'); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 5px 0;
+}
+
+.banner {
+    background-image: url('logo2.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; 
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner::before {
+    content: "";
+    display: block;
+    padding-top: 1%; /* Mantiene la relación de aspecto 1:1 para el espacio del logo */
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.bloque{        /*Clase padre*/
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.bloque-block{     /*Clase hijo*/
+    margin: 1%;
+    padding: 30px;
+    width: 400px;
+    height: auto;
+    color: #fff;
+
+}
+
+.bloque-block section:nth-child(n){
+    text-align: justify;
+    position: relative;
+
+}
+
+.bloque-block section:nth-child(n) button{
+    margin: 10px 0 10px 0;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10%;
+    background: #009688; /*color de boton*/
+    color: #fff;
+    cursor: pointer;
+}
+.texto_expandir{
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;/*demora en bajar el texto*/
+    color: #fff;
+}
+
+.abrir_cerrar{
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
