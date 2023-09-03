@@ -1,12 +1,15 @@
-# proyecto-cubiculos
+# Proyecto-cubiculos
 Se busca con este proyecto, la posibilidad de poder reservar cubiculos de estudio sin necesidad de ir fisicamente, esto mediante de una pagina web en la que los estudiantes puedan ingresar y reservar el cubiculo que deseen.
 # Objetivo
 Optimizar la reserva de cubiculos para que mas estudiantes hagan uso de estos.
 # Aplicaciones a usar para desarrollar el proyecto
-Visual Studio Code
+Visual Studio Code(Pagina Web)
+XAMPP(base de datos)
 
 # Conocimientos a aplicar
-Trabajo con HTML, JavaScript, y CSS, ademas de distintos diagramas de UML.
+Trabajo con HTML, JavaScript, y CSS, ademas de distintos diagramas de UML, uso de la metodologia de trabajo Scrum.
+
+
 
 
 
