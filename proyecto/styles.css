@@ -79,3 +79,46 @@ body {
     max-height: 500px;
     transition: max-height 0.5s ease-in;
 }
+
+.container{      /* Contenedor del login */
+    width: 300px;
+    max-height: 300px;
+    margin-left: 90px;
+    padding: 20px;
+    background-color: #0e0e0f2d;
+    border-radius: 12px;
+    color: #fff;
+    border-style:solid ;
+}
+
+#usuario{   /* id para usuario, funcion acomodar y dar estilo al texto */
+    margin-left: 110px;
+    font-size: 150%;
+    text-shadow: 1px 3px black;
+}
+
+.cajoncito{ /* placeholder de usuario y contraseña */
+    margin-left: 70px;
+    height: 30px;
+    border-radius: 12px;
+}
+
+
+#contraseña{    /* id para contraseña, funcion acomodar y dar estilo al texto */
+    margin-left: 90px;
+    font-size: 150%;
+    text-shadow: 1px 3px black;
+}
+
+#botonLogin{    /* darle estilo al boton de Ingresar */
+    margin-top: 40px;
+    margin-left: 110px;
+    border-style: groove;
+    border-radius: 12px;
+    height: 30px;
+    width: 80px;
+}
+
+#botonLogin:hover{  /* para que el mouse se vea chido al colocarlo en ingresar */
+    cursor: pointer;
+}
