@@ -1,11 +1,170 @@
+
+/*  CSS de login    */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+main{
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+    margin-top: 1px;
+}
+
+.block_login{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.ventana_trasera{
+    width: 100%;
+    height: 500px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: #01568E; /*color de fondo login*/
+    border-radius: 10%;
+}
+
+.ventana_trasera div{
+    margin: 100px 40px;
+    color: #fff;
+    transition: all 500ms;
+
+}
+
+.ventana_trasera div p,
+.ventana_trasera div button{
+    margin-top: 30px;
+}
+
+.ventana_trasera h3{
+    font-weight: 400;
+    font-size: 26px;
+
+}
+
+.ventana_trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    transition: all 300ms;
+}
+
+.ventana_trasera button:hover{
+    background: #fff;
+    color: #46a2fd;
+}
+/*formularios*/
+.block-login-registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.227);
+}
+
+.block-login-registro form{
+    width: 100%;
+    padding: 78px 20px;
+    background: #fff; /*color de fondo de registro e inicio*/
+    position: absolute;
+    border-radius: 20px;
+}
+
+.block-login-registro form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46a2fd;
+}
+
+.block-login-registro form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.block-login-registro form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46a2fd;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.formulario_login{
+    opacity: 1;
+    display: block;
+}
+.formulario_registrar{
+    display: none;
+}
+
+/*------------------------------------------------------------------*/
+@media screen and (max-width: 800px){
+
+    main{
+        margin-top: 50px;
+    }
+    .ventana_trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .ventana_trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+    /*formularios */
+    .block-login-registro{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .block-login-registro form{
+        position: relative;
+    }
+
+
+}
+
+/*imagen de fondo, logo y boton de info*/
+
 body {
     margin: 0;
     padding: 0;
     background-image: url('fondo.png'); 
     background-size: cover;
     font-family: Arial, sans-serif;
-    padding: 5px 0;
+    padding: 10px 0;
+    background-attachment: fixed;
 }
+
 
 .banner {
     background-image: url('logo2.png'); 
@@ -14,7 +173,7 @@ body {
     background-position: top left;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 5px 0;
     position: relative; 
 }
 
@@ -30,11 +189,7 @@ body {
     padding-top: 1%; /* Mantiene la relación de aspecto 1:1 para el espacio del logo */
 
 }
-*{
-    margin: 0;
-    padding: 0;
 
-}
 
 .bloque{        /*Clase padre*/
     width: 100%;
@@ -42,11 +197,13 @@ body {
     height: auto;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: -100px;
 }
 
 .bloque-block{     /*Clase hijo*/
     margin: 1%;
-    padding: 30px;
+    padding: -100px;
     width: 400px;
     height: auto;
     color: #fff;
@@ -63,7 +220,7 @@ body {
     margin: 10px 0 10px 0;
     padding: 5px 10px 5px 10px;
     border-radius: 10%;
-    background: #009688; /*color de boton*/
+    background: #46a2fd; /*color de boton*/
     color: #fff;
     cursor: pointer;
 }
@@ -71,54 +228,11 @@ body {
     position: relative;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.4s ease-out;/*demora en bajar el texto*/
+    transition: max-height 0.4s ease-out; /*demora en bajar el texto*/
     color: #fff;
 }
 
 .abrir_cerrar{
     max-height: 500px;
     transition: max-height 0.5s ease-in;
-}
-
-.container{      /* Contenedor del login */
-    width: 300px;
-    max-height: 300px;
-    margin-left: 90px;
-    padding: 20px;
-    background-color: #0e0e0f2d;
-    border-radius: 12px;
-    color: #fff;
-    border-style:solid ;
-}
-
-#usuario{   /* id para usuario, funcion acomodar y dar estilo al texto */
-    margin-left: 110px;
-    font-size: 150%;
-    text-shadow: 1px 3px black;
-}
-
-.cajoncito{ /* placeholder de usuario y contraseña */
-    margin-left: 70px;
-    height: 30px;
-    border-radius: 12px;
-}
-
-
-#contraseña{    /* id para contraseña, funcion acomodar y dar estilo al texto */
-    margin-left: 90px;
-    font-size: 150%;
-    text-shadow: 1px 3px black;
-}
-
-#botonLogin{    /* darle estilo al boton de Ingresar */
-    margin-top: 40px;
-    margin-left: 110px;
-    border-style: groove;
-    border-radius: 12px;
-    height: 30px;
-    width: 80px;
-}
-
-#botonLogin:hover{  /* para que el mouse se vea chido al colocarlo en ingresar */
-    cursor: pointer;
 }
