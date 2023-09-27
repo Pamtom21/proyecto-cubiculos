@@ -28,7 +28,8 @@
 
             <!--formulario login y registro-->
             <div class="block-login-registro">
-                <form action="" class="formulario_login">
+                <?php include 'base.php'; ?>
+                <form action="base.php" class="formulario_login">
                     <h2>Iniciar Sesion</h2>
                     <input type="text" placeholder=" Correo Electronico">
                     <input type="password" placeholder="Contraseña">
@@ -36,7 +37,7 @@
                 </form>
 
                 <!--Registro a login-->
-                <form action="" class="formulario_registrar">
+                <form action="base.php" class="formulario_registrar">
                     <h2>Registrarse</h2>
                     <input type="text" placeholder="Nombre Completo">
                     <input type="text" placeholder="Correo Electronico">
