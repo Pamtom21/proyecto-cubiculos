@@ -2,7 +2,7 @@
 $servername = "localhost"; 
 $username = "root"; 
 $password = ""; 
-$database = "proyect"; 
+$database = "registro"; 
 
 
 $conn = new mysqli($servername, $username, $password, $database);
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $resultado = $conn->query($sql);
 
         if ($resultado->num_rows == 1) {
-//            header("Location: ");
+            header("Location: file:///C:/Users/josit/OneDrive/Desktop/tarar/proyecto-cubiculos/proyecto/home.html# ");
             exit();
         } else {
             echo "Correo o contrasena invalida. Inténtalo de nuevo.";
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $resultado = $conn->query($sql);
 
         if ($resultado) {
-            //header("Location: ");
+            header("Location:file:///C:/Users/josit/OneDrive/Desktop/tarar/proyecto-cubiculos/proyecto/home.html# ");
             exit();
         } else {
             // Error al registrar el usuario, muestra un mensaje de error
