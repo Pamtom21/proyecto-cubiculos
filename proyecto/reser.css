@@ -17,7 +17,7 @@ input[type="num"],
 input[type="horas"],            
 textarea {                         /* Area de Texto*/
    width: 100%;                    /* Ancho 100%*/
-   padding: 10px;                  /* Relleno 10px*/
+   padding: 5px;                  /* Relleno 10px*/
    border: 1px solid #ccc;       /* Borde 1px Solido, Color*/
    border-radius: 5px;              /* Radio del Borde 5px*/
 }
