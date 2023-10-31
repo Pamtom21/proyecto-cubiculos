@@ -1,0 +1,32 @@
+form {
+    background-color: #164fca7c;    /* Color del Fondo*/
+    border-radius: 10px;            /* Radio del Borde*/
+    padding: 40px;                  /* Relleno 40px*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efecto para la Sombra de la Caja*/
+    width: 500px;                   /* Ancho 500px*/
+}
+
+label {
+    font-weight: bold;              /* Letra Destacada*/
+    display: block;                 /* Tipo de caja*/
+}
+
+input[type="text"],                
+input[type="fecha"],
+input[type="num"],    
+input[type="horas"],            
+textarea {                         /* Area de Texto*/
+   width: 100%;                    /* Ancho 100%*/
+   padding: 10px;                  /* Relleno 10px*/
+   border: 1px solid #ccc;       /* Borde 1px Solido, Color*/
+   border-radius: 5px;              /* Radio del Borde 5px*/
+}
+
+button,input[type="submit"] {
+    background-color: #003cff;    /* Color del Fondo*/
+    color: white;                 /* Color de las Letras*/
+    padding: 10px 20px;             /* Relleno horizontal,vertical*/
+    border: none;                   /* Borde ninguno*/
+    border-radius: 5px;             /* Radio del Borde 5px*/
+    cursor: pointer;                /* Cursor Puntero*/
+}

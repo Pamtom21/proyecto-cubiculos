@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="reser.css">
     <title>Cubiculos UCT</title>
 </head>
 <body>
     <div class = "banner">
         <center><h1>Reservas</h1></center>
     </div>
+    <div>
+        <!-- Formulario-->
+        <form action="" id="miFormulario"> <!-- Define la URL a la que se enviará la información del formulario cuando se envíe utilizando el id para identificar el formulario desde JavaScript.-->
+        <div>
+            <label for="nombre">Nombre:</label>              <!-- campo de entrada de nombre.-->
+            <input type="text" id="nombre" name="nombre" required> <!-- campo de entrada de texto donde los usuarios pueden escribir su nombre con required para campo obligatorio.-->
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input type="fecha" id="fecha" name="fecha" required>
+        </div>
+        <div>
+            <label for="numero">Numero de cubículo:</label>
+            <input type="num" id="numero" name="numero" required>
+        </div>
+        <div>
+            <label for="horas">Horas:</label>
+            <input type="horas" id="horas" name="horas" required></input>
+        </div>
+            <input type="submit" value="Enviar"> <!-- Botón de envío que permite enviar el formulario, enviando la información del formulario a la URL.-->
+        </form>
+    </div>
+
 </body>
 </html>
