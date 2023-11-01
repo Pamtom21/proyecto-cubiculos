@@ -1,0 +1,53 @@
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(239, 239, 241);
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    border-radius: 30px;
+}
+.cubiculo{
+    padding-top:30px;
+    padding-left: 50px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.cubiculolargo{
+    width: 900px;
+    height: 400px;
+    background-color: black;
+    margin-left: 300px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    
+}
+.deslisante{
+    justify-content: center;
+    align-items: center;
+}
+.imagen{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.titulo{
+    font-size: 30px;
+}
+.piso{
+    color: gray;
+}
+.cubiculo-info {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Agrega tus estilos CSS adicionales aquí */
