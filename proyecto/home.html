@@ -5,59 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="cubiculos.css">
 
     <title>Cubiculos UCT</title>
 </head>
 <body>
     <div class = "banner">
-        <center><h1>Bienvenido</h1></center>
-
+        <center><h1>Reservas</h1></center>
     </div>
-    <nav class="nav">
-        <ul class = "list">
-            <li class = "list__item">
-                <div class="list__buttom">
-                    <img src="recursos/coso.svg" class="list__img">
-                    <a href="" class="nav__link">Inicio</a>
-                </div>
 
-            </li>
+    <div class="container">
+        <div>
 
-            <f><li class="list__item list__item--click">
-                <div class="list__buttom list__buttom--click">
-                    <img src="recursos/calendar.svg" class="list__img">
-                    <a href="#" class="nav__link"> Reserva </a>
-                    <img src="recursos/flecha.svg" class="list__arrow">
-                </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="" class="nav__link nav__link--inside">Carrito  </a>
-                </ul>
-            </li></f>
-            <r><li class="list__item list__item--click">
-                <div class="list__buttom list__buttom--click">
-                    <img src="" class="list__img">
-                    <a href="#" class="nav__link"> Quienes Somos</a>
-                    <img src="recursos/flecha.svg" class="list__arrow">
-                </div>
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="" class="nav__link nav__link--inside">Historia </a>
-
+            <nav class="nav">
+                <ul class = "list">
+                    <li class = "list__item">
+                        <div class="list__buttom">
+                            <img src="recursos/coso.svg" class="list__img">
+                            <a href="" class="nav__link">Inicio</a>
+                        </div>
+        
                     </li>
-                    <li class="list__inside">
-                        <a href="" class="nav__link nav__link--inside">Equipo </a>
-
-                    </li>
+        
+                    <f><li class="list__item list__item--click">
+                        <div class="list__buttom list__buttom--click">
+                            <img src="recursos/calendar.svg" class="list__img">
+                            <a href="#" class="nav__link"> Reserva </a>
+                            <img src="recursos/flecha.svg" class="list__arrow">
+                        </div>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="" class="nav__link nav__link--inside">Carrito  </a>
+                        </ul>
+                    </li></f>
+                    <r><li class="list__item list__item--click">
+                        <div class="list__buttom list__buttom--click">
+                            <img src="" class="list__img">
+                            <a href="#" class="nav__link"> Quienes Somos</a>
+                            <img src="recursos/flecha.svg" class="list__arrow">
+                        </div>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="" class="nav__link nav__link--inside">Historia </a>
+        
+                            </li>
+                            <li class="list__inside">
+                                <a href="" class="nav__link nav__link--inside">Equipo </a>
+        
+                            </li>
+                        </ul>
+                    </li></r>
+                    <li class="list__item">
+                        <div class="list__buttom list__buttom--click">
+                            <img src="recursos/fono.svg" class="list__img">
+                            <a href="#" class="nav__link"> Contacto </a>
                 </ul>
-            </li></r>
-            <li class="list__item">
-                <div class="list__buttom list__buttom--click">
-                    <img src="recursos/fono.svg" class="list__img">
-                    <a href="#" class="nav__link"> Contacto </a>
-        </ul>
-    </nav>
-    <script src="main.js"></script>
-
+            </nav>
+            <script src="main.js"></script>
+        </div>
+        <div>¿
+            <section class="flexcontainer">
+                <section class="deslisante">
+                    <div class="cubiculolargo">
+                        <img src="cubiculps/descarga (1).jpg" alt="" class="patata" onclick="changeImage(this)">
+                        <img src="cubiculps/descarga (2).jpg" alt="" class="patata" onclick="changeImage(this)">
+                        <img src="cubiculps/descarga (3).jpg" alt="" class="patata" onclick="changeImage(this)">
+                        <img src="cubiculps/descarga (4).jpg" alt="" class="patata" onclick="changeImage(this)">
+                        <img src="cubiculps/descarga (5).jpg" alt="" class="patata" onclick="changeImage(this)">
+                    </div>
+                    
+                </section>
+        
+                <div class="cubiculo" onmouseover="showCubiculoInfo(this)" onmouseout="hideCubiculoInfo(this)">
+                    <img src="cubiculps/descarga (1).jpg" alt="" class="imagen">
+                    <p class="titulo">Cubículo 1</p>
+                    <p class="piso">Piso 2 edificio 7</p>
+                    <div class="cubiculo-info">
+                        <div class="image-container">
+                            <img src="cubiculps/descarga (1).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (2).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (3).jpg" alt="" class="info-imagen">
+                        </div>
+                        <h2 class="info-titulo">Cubículo 1</h2>
+                        <p class="info-descripcion">Descripción del cubículo 1.</p>
+                    </div>
+                </div>
+                
+                <div class="cubiculo" onmouseover="showCubiculoInfo(this)" onmouseout="hideCubiculoInfo(this)">
+                    <img src="cubiculps/descarga (1).jpg" alt="" class="imagen">
+                    <p class="titulo">Cubículo 1</p>
+                    <p class="piso">Piso 2 edificio 7</p>
+                    <div class="cubiculo-info">
+                        <div class="image-container">
+                            <img src="cubiculps/descarga (1).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (2).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (3).jpg" alt="" class="info-imagen">
+                        </div>
+                        <h2 class="info-titulo">Cubículo 1</h2>
+                        <p class="info-descripcion">Descripción del cubículo 1.</p>
+                    </div>
+                </div>
+                <div class="cubiculo" onmouseover="showCubiculoInfo(this)" onmouseout="hideCubiculoInfo(this)">
+                    <img src="cubiculps/descarga (1).jpg" alt="" class="imagen">
+                    <p class="titulo">Cubículo 1</p>
+                    <p class="piso">Piso 2 edificio 7</p>
+                    <div class="cubiculo-info">
+                        <div class="image-container">
+                            <img src="cubiculps/descarga (1).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (2).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (3).jpg" alt="" class="info-imagen">
+                        </div>
+                        <h2 class="info-titulo">Cubículo 1</h2>
+                        <p class="info-descripcion">Descripción del cubículo 1.</p>
+                    </div>
+                </div>
+                <div class="cubiculo" onmouseover="showCubiculoInfo(this)" onmouseout="hideCubiculoInfo(this)">
+                    <img src="cubiculps/descarga (1).jpg" alt="" class="imagen">
+                    <p class="titulo">Cubículo 1</p>
+                    <p class="piso">Piso 2 edificio 7</p>
+                    <div class="cubiculo-info">
+                        <div class="image-container">
+                            <img src="cubiculps/descarga (1).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (2).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (3).jpg" alt="" class="info-imagen">
+                        </div>
+                        <h2 class="info-titulo">Cubículo 1</h2>
+                        <p class="info-descripcion">Descripción del cubículo 1.</p>
+                    </div>
+                </div>
+                <div class="cubiculo" onmouseover="showCubiculoInfo(this)" onmouseout="hideCubiculoInfo(this)">
+                    <img src="cubiculps/descarga (1).jpg" alt="" class="imagen">
+                    <p class="titulo">Cubículo 1</p>
+                    <p class="piso">Piso 2 edificio 7</p>
+                    <div class="cubiculo-info">
+                        <div class="image-container">
+                            <img src="cubiculps/descarga (1).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (2).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (3).jpg" alt="" class="info-imagen">
+                        </div>
+                        <h2 class="info-titulo">Cubículo 1</h2>
+                        <p class="info-descripcion">Descripción del cubículo 1.</p>
+                    </div>
+                </div>
+                <div class="cubiculo" onmouseover="showCubiculoInfo(this)" onmouseout="hideCubiculoInfo(this)">
+                    <img src="cubiculps/descarga (1).jpg" alt="" class="imagen">
+                    <p class="titulo">Cubículo 1</p>
+                    <p class="piso">Piso 2 edificio 7</p>
+                    <div class="cubiculo-info">
+                        <div class="image-container">
+                            <img src="cubiculps/descarga (1).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (2).jpg" alt="" class="info-imagen">
+                            <img src="cubiculps/descarga (3).jpg" alt="" class="info-imagen">
+                        </div>
+                        <h2 class="info-titulo">Cubículo 1</h2>
+                        <p class="info-descripcion">Descripción del cubículo 1.</p>
+                    </div>
+                </div>
+        
+                <!-- Repite el código anterior para cada cubículo -->
+        
+            </section>
+            <script src="cubiculos.js"></script>
+        </div>
+        <div class="footer">
+            <p>deimon.quezada@gmail.com</p>
+            <p>rgarces2019@alu.uct.cl</p>
+            <p>rcarilao2023@alu.uct.cl</p>
+        </div>
 </body>
 </html>

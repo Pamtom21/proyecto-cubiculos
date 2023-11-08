@@ -30,3 +30,9 @@ button,input[type="submit"] {
     border-radius: 5px;             /* Radio del Borde 5px*/
     cursor: pointer;                /* Cursor Puntero*/
 }
+.a{
+    display: flex; /* Utiliza flexbox para centrar vertical y horizontalmente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Aprovecha el 100% de la altura de la ventana */
+}
