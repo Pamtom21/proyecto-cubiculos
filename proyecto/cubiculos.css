@@ -26,6 +26,19 @@
     border-radius: 10px;
     
 }
+.patata {
+    display: none;
+    width: 900px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.patata:first-child {
+    display: block;
+}
+
+
 .deslisante{
     justify-content: center;
     align-items: center;
